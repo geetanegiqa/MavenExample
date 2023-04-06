@@ -1,7 +1,7 @@
 package com.qagenic.training;
 
 public class BranchingSwitchCaseExample {
-    public String getCompleteBrowserNameUsingIfElse(String browsernameShort) {
+    public static String getCompleteBrowserNameUsingIfElse(String browsernameShort) {
         if (browsernameShort.equals("f") || browsernameShort.equalsIgnoreCase("ff"))
             return "Firefox";
         else if (browsernameShort.equalsIgnoreCase("c"))
@@ -12,7 +12,7 @@ public class BranchingSwitchCaseExample {
             return "Edge";
     }
 
-    public String getCompleteBrowserNameUsingSwitch(String browsernameShort){
+    public static String getCompleteBrowserNameUsingSwitch(String browsernameShort){
 
         switch (browsernameShort.toLowerCase()) {
             case "f":
